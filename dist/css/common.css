@@ -1,0 +1,38 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.wrap {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: calc(100% - 100px);
+	height: 80px;
+	padding: 20px 50px;
+	background-color: #456852;
+}
+
+header > h1 {
+	width: 120px;
+	height: 80px;
+	float: left;
+	background-color: #943571;
+}
+
+header > button {
+	display: none;
+}
+
+header > .main_menu {
+	width: 450px;
+	height: 80px;
+	float: right;
+	background-color: #123456;
+}

@@ -1,0 +1,100 @@
+// 컬러 $
+$Dblack  : #1e1e1e;
+$black   : #282828;
+$white   : #ffffff;
+$gray    : #969696;
+$l_gray  : #e4e4e4;
+$point   : #d61919; //추후 변경 예정
+
+
+// 폰트 @MIXIN 
+@mixin fontB($size, $weight, $height, $align){
+
+  font-size : $size + px;
+  font-weight: $weight;
+  line-height: $height + px;
+  text-align : $align;
+  color: $black;
+
+}// @include fontB($size, $height, $align);
+
+
+@mixin fontW($size, $weight, $height, $align){
+
+  font-size : $size + px;
+  font-weight: $weight;
+  line-height: $height + px;
+  text-align : $align;
+  color: $white;
+
+}// @include fontW($size, $height, $align);
+
+@mixin fontC($size, $weight, $height, $align, $color){
+
+  font-size : $size + px;
+  font-weight: $weight;
+  line-height: $height + px;
+  text-align : $align;
+  color: $color;
+
+}// @include fontC($size, $height, $align);
+
+
+// background-img @MIXIN
+@mixin bgi_b(){
+
+  background-size: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+}// @include bgi_b();
+
+@mixin bgi_s($bgs, $bgp){
+
+  background-size: $bgs;
+  background-position: $bgp;
+  background-repeat: no-repeat;
+
+}// @include bgi_S($bgs, $bgp);
+
+
+// ETC @MIXIN
+@mixin parent(){
+
+  width: 100%;
+  height: 100%;
+
+}// @include parent();
+
+@mixin parent50(){
+
+  width: 50%;
+  height: 50%;
+
+}// @include parent50
+// ();
+
+@mixin borderR($radius){
+
+  border-radius : $radius;
+  -moz-border-radius : $radius;
+  -webkit-border-radius : $radius;
+
+}// @include borderR($radius);
+
+@mixin shadow($left, $bot, $deep, $color){
+
+  box-shadow : $left + px $bot + px $deep + px $color;
+  -moz-box-shadow : $left + px $bot + px $deep + px $color;
+  -webkit-box-shadow : $left + px $bot + px $deep + px $color;
+
+}// @include shadow($left, $bot, $deep, $color);
+
+@mixin rotate($deg){
+
+  transform: rotate($deg + deg);
+  -ms-transform: rotate($deg + deg);
+  -moz-transform: rotate($deg + deg);
+  -webkit-transform: rotate($deg + deg);
+
+}// @include rotate($deg);
